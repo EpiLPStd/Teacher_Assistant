@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manage.ManageFragment">
+
+    <Button
+        android:id="@+id/addSubjectButton"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="160dp"
+        android:text="@string/addSubject"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addGroupButton"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/addGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addSubjectButton" />
+
+    <Button
+        android:id="@+id/addStudentButton"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/addStudent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addGroupButton" />
+
+    <Button
+        android:id="@+id/addStudentClassButton"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/addStudentClass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addStudentButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

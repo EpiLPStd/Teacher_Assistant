@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Asystent Nauczyciela</string>
+    <string name="manage">ZARZĄDZAJ</string>
+    <string name="select">WYŚWIETL</string>
+    <string name="addSubject">DODAJ PRZEDMIOT</string>
+    <string name="addGroup">DODAJ GRUPĘ</string>
+    <string name="addStudent">DODAJ STUDENTA</string>
+    <string name="addStudentClass">DODAJ DO GRUPY</string>
+    <string name="add">DODAJ</string>
+    <string name="subjectName">Nazwa przedmiotu</string>
+    <string name="dayOfWeek">Dzień tygodnia</string>
+    <string name="startHour">Godzina rozpoczęcia</string>
+    <string name="endHour">Godzina zakończenia</string>
+    <string name="studentName">Imię i nazwisko</string>
+    <string name="studentID">Numer albumu</string>
+    <string name="groupName">Nazwa grupy</string>
+    <string name="addMark">Dodaj ocenę</string>
+    <string name="inputMark">Wprowadź ocenę</string>
+    <string name="addDescription">Dodaj opis</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mark"><b><i>Ocena</i></b></string>
+    <string name="markType"><b><i>Rodzaj oceny</i></b></string>
+    <string name="markDescription"><b><i>Opis</i></b></string>
+    <string name="delete">Usuń dane</string>
+</resources>

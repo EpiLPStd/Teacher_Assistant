@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.asystentnauczyciela.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_manageFragment"
+            app:destination="@id/manageFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_selectFragment"
+            app:destination="@id/selectFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageFragment"
+        android:name="com.example.asystentnauczyciela.manage.ManageFragment"
+        android:label="fragment_manage"
+        tools:layout="@layout/fragment_manage" >
+        <action
+            android:id="@+id/action_manageFragment_to_manageSubjectsFragment"
+            app:destination="@id/manageSubjectsFragment" />
+        <action
+            android:id="@+id/action_manageFragment_to_manageGroupsFragment"
+            app:destination="@id/manageGroupsFragment" />
+        <action
+            android:id="@+id/action_manageFragment_to_manageStudentsFragment"
+            app:destination="@id/manageStudentsFragment" />
+        <action
+            android:id="@+id/action_manageFragment_to_studentClassFragment"
+            app:destination="@id/studentClassFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectFragment"
+        android:name="com.example.asystentnauczyciela.select.SelectFragment"
+        android:label="fragment_select"
+        tools:layout="@layout/fragment_select" >
+        <action
+            android:id="@+id/action_selectFragment_to_subjectGroupFragment"
+            app:destination="@id/subjectGroupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageSubjectsFragment"
+        android:name="com.example.asystentnauczyciela.subjects.ManageSubjectsFragment"
+        android:label="fragment_manage_subjects"
+        tools:layout="@layout/fragment_manage_subjects" />
+    <fragment
+        android:id="@+id/manageGroupsFragment"
+        android:name="com.example.asystentnauczyciela.groups.ManageGroupsFragment"
+        android:label="fragment_manage_groups"
+        tools:layout="@layout/fragment_manage_groups" />
+    <fragment
+        android:id="@+id/manageStudentsFragment"
+        android:name="com.example.asystentnauczyciela.students.ManageStudentsFragment"
+        android:label="fragment_manage_students"
+        tools:layout="@layout/fragment_manage_students" />
+    <fragment
+        android:id="@+id/studentSubjectFragment"
+        android:name="com.example.asystentnauczyciela.subjectstudent.StudentSubjectFragment"
+        android:label="fragment_student_subject"
+        tools:layout="@layout/fragment_student_subject" >
+        <action
+            android:id="@+id/action_studentSubjectFragment_to_studentMarksFragment"
+            app:destination="@id/studentMarksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMarkFragment"
+        android:name="com.example.asystentnauczyciela.addmark.AddMarkFragment"
+        android:label="fragment_add_mark"
+        tools:layout="@layout/fragment_add_mark" />
+    <fragment
+        android:id="@+id/subjectGroupFragment"
+        android:name="com.example.asystentnauczyciela.subjectgroup.SubjectGroupFragment"
+        android:label="subject_group_fragment"
+        tools:layout="@layout/fragment_subject_group" >
+        <action
+            android:id="@+id/action_subjectGroupFragment_to_studentSubjectFragment"
+            app:destination="@id/studentSubjectFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentClassFragment"
+        android:name="com.example.asystentnauczyciela.studentclass.StudentClassFragment"
+        android:label="fragment_student_class"
+        tools:layout="@layout/fragment_student_class" />
+    <fragment
+        android:id="@+id/studentMarksFragment"
+        android:name="com.example.asystentnauczyciela.studentmarks.StudentMarksFragment"
+        android:label="StudentMarksFragment" >
+        <action
+            android:id="@+id/action_studentMarksFragment_to_addMarkFragment"
+            app:destination="@id/addMarkFragment" />
+    </fragment>
+</navigation>
